@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name custom)(type KiCad)(uri /home/brian/Projects/RBS-HC2019/board/custom.pretty)(options "")(descr ""))
+)

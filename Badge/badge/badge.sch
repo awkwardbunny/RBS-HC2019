@@ -1,0 +1,268 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_USB:FT232RL U1
+U 1 1 5D5D9997
+P 3950 3100
+F 0 "U1" H 3950 4278 50  0000 C CNN
+F 1 "FT232RL" H 3950 4187 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 3950 3100 50  0001 C CNN
+F 3 "http://www.ftdichip.com/Products/ICs/FT232RL.htm" H 3950 3100 50  0001 C CNN
+	1    3950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5D5D9A49
+P 2250 2700
+F 0 "J1" H 2305 3167 50  0000 C CNN
+F 1 "USB_B_Micro" H 2305 3076 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 2400 2650 50  0001 C CNN
+F 3 "~" H 2400 2650 50  0001 C CNN
+	1    2250 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2700 3150 2700
+Wire Wire Line
+	3150 2800 2550 2800
+Wire Wire Line
+	2550 2500 2650 2500
+Wire Wire Line
+	2650 2500 2650 2100
+Wire Wire Line
+	2650 2100 2750 2100
+Wire Wire Line
+	4050 2100 3850 2100
+Connection ~ 3850 2100
+Wire Wire Line
+	2250 3100 2250 4100
+Wire Wire Line
+	2250 4100 3150 4100
+Wire Wire Line
+	3750 4100 3950 4100
+Connection ~ 3750 4100
+Connection ~ 3950 4100
+Wire Wire Line
+	3950 4100 4050 4100
+Connection ~ 4050 4100
+Wire Wire Line
+	4050 4100 4150 4100
+$Comp
+L power:GND #PWR03
+U 1 1 5D5D9C72
+P 3950 4100
+F 0 "#PWR03" H 3950 3850 50  0001 C CNN
+F 1 "GND" H 3955 3927 50  0001 C CNN
+F 2 "" H 3950 4100 50  0001 C CNN
+F 3 "" H 3950 4100 50  0001 C CNN
+	1    3950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5D5D9C9E
+P 2900 2300
+F 0 "#PWR01" H 2900 2050 50  0001 C CNN
+F 1 "GND" H 2905 2127 50  0001 C CNN
+F 2 "" H 2900 2300 50  0001 C CNN
+F 3 "" H 2900 2300 50  0001 C CNN
+	1    2900 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5D5D9CDB
+P 2750 2200
+F 0 "C1" H 2842 2246 50  0000 L CNN
+F 1 "10n" H 2842 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2750 2200 50  0001 C CNN
+F 3 "~" H 2750 2200 50  0001 C CNN
+	1    2750 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2750 2100
+Wire Wire Line
+	2750 2100 3050 2100
+$Comp
+L Device:C_Small C2
+U 1 1 5D5D9E2C
+P 3050 2200
+F 0 "C2" H 3142 2246 50  0000 L CNN
+F 1 "100n" H 3142 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3050 2200 50  0001 C CNN
+F 3 "~" H 3050 2200 50  0001 C CNN
+	1    3050 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 3050 2100
+Wire Wire Line
+	3050 2100 3850 2100
+Wire Wire Line
+	2750 2300 2900 2300
+Connection ~ 2900 2300
+Wire Wire Line
+	2900 2300 3050 2300
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 5D5DA1AA
+P 6150 2300
+F 0 "J2" H 6230 2342 50  0000 L CNN
+F 1 "Conn_01x05" H 6230 2251 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 6150 2300 50  0001 C CNN
+F 3 "~" H 6150 2300 50  0001 C CNN
+	1    6150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5D5DA22A
+P 3100 2500
+F 0 "C3" H 3192 2546 50  0000 L CNN
+F 1 "100n" H 3192 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3100 2500 50  0001 C CNN
+F 3 "~" H 3100 2500 50  0001 C CNN
+	1    3100 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2400 3150 2400
+$Comp
+L power:GND #PWR02
+U 1 1 5D5DA41B
+P 3100 2600
+F 0 "#PWR02" H 3100 2350 50  0001 C CNN
+F 1 "GND" H 3105 2427 50  0001 C CNN
+F 2 "" H 3100 2600 50  0001 C CNN
+F 3 "" H 3100 2600 50  0001 C CNN
+	1    3100 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2400 3100 2000
+Wire Wire Line
+	5850 2000 5850 2200
+Wire Wire Line
+	5850 2200 5950 2200
+Connection ~ 3100 2400
+Wire Wire Line
+	3100 2000 5850 2000
+Connection ~ 4050 2100
+Wire Wire Line
+	4150 4100 5850 4100
+Wire Wire Line
+	5850 4100 5850 2500
+Wire Wire Line
+	5850 2500 5950 2500
+Connection ~ 4150 4100
+Wire Wire Line
+	2150 3100 2250 3100
+Connection ~ 2250 3100
+Wire Wire Line
+	3150 3800 3150 4100
+Connection ~ 3150 4100
+Wire Wire Line
+	3150 4100 3750 4100
+$Comp
+L Device:R R2
+U 1 1 5D5DB87A
+P 5450 2850
+F 0 "R2" H 5520 2896 50  0000 L CNN
+F 1 "270" H 5520 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5380 2850 50  0001 C CNN
+F 3 "~" H 5450 2850 50  0001 C CNN
+	1    5450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5D5DC455
+P 5450 3150
+F 0 "D2" V 5488 3032 50  0000 R CNN
+F 1 "LED_RX" V 5397 3032 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 5450 3150 50  0001 C CNN
+F 3 "~" H 5450 3150 50  0001 C CNN
+	1    5450 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D5DCD4D
+P 5000 2850
+F 0 "R1" H 5070 2896 50  0000 L CNN
+F 1 "270" H 5070 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4930 2850 50  0001 C CNN
+F 3 "~" H 5000 2850 50  0001 C CNN
+	1    5000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5D5DCD53
+P 5000 3150
+F 0 "D1" V 5038 3033 50  0000 R CNN
+F 1 "LED_TX" V 4947 3033 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 5000 3150 50  0001 C CNN
+F 3 "~" H 5000 3150 50  0001 C CNN
+	1    5000 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 2400 4850 2400
+Wire Wire Line
+	4850 2400 4850 2300
+Wire Wire Line
+	4850 2300 5950 2300
+Wire Wire Line
+	4750 2500 4950 2500
+Wire Wire Line
+	4950 2500 4950 2400
+Wire Wire Line
+	4950 2400 5950 2400
+Wire Wire Line
+	5000 3400 5000 3300
+Wire Wire Line
+	5450 3500 5450 3300
+NoConn ~ 4750 2600
+NoConn ~ 4750 2700
+NoConn ~ 4750 2800
+NoConn ~ 4750 2900
+NoConn ~ 4750 3000
+NoConn ~ 4750 3100
+NoConn ~ 4750 3600
+NoConn ~ 4750 3700
+NoConn ~ 4750 3800
+NoConn ~ 2550 2900
+NoConn ~ 3150 3100
+NoConn ~ 3150 3300
+NoConn ~ 3150 3500
+Wire Wire Line
+	5000 3400 4750 3400
+Wire Wire Line
+	4750 3500 5450 3500
+Wire Wire Line
+	5000 2700 5000 2100
+Wire Wire Line
+	4050 2100 5000 2100
+Connection ~ 5000 2100
+Wire Wire Line
+	5000 2100 5450 2100
+Wire Wire Line
+	5450 2100 5450 2700
+Connection ~ 5450 2100
+Wire Wire Line
+	5450 2100 5950 2100
+$EndSCHEMATC
