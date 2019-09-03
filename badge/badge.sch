@@ -1,15 +1,16 @@
 EESchema Schematic File Version 4
+LIBS:badge-cache
 EELAYER 26 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "RBS232 Badge"
+Date "2019-09-03"
+Rev "A"
+Comp "Red Balloon Security"
+Comment1 "@im_eningeer"
+Comment2 "Brian S. Hong"
 Comment3 ""
 Comment4 ""
 $EndDescr
